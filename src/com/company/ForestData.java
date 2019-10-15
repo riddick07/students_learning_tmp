@@ -4,13 +4,13 @@ import java.util.List;
 
 public class ForestData {
 
-    private List<TreeDto> trees;
+    private List<TreeData> trees;
 
-    public List<TreeDto> getTrees() {
+    public List<TreeData> getTrees() {
         return trees;
     }
 
-    public void setTrees(List<TreeDto> trees) {
+    public void setTrees(List<TreeData> trees) {
         this.trees = trees;
     }
 

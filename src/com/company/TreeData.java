@@ -1,6 +1,6 @@
 package com.company;
 
-public class TreeDto {
+public class TreeData {
     private String type;
     private String color;
     private String origin;
