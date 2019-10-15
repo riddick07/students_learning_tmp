@@ -4,6 +4,7 @@ public class PersonData {
 
     public String firstName;
     public String lastName;
+    private String birthday;
     public int age;
     public String nationality;
     public boolean isAlive;
@@ -12,6 +13,14 @@ public class PersonData {
     public boolean isMarried;
     private double high;
     private String address;
+
+    public String getBirthday() {
+        return birthday;
+    }
+
+    public void setBirthday(String birthday) {
+        this.birthday = birthday;
+    }
 
     public double getHigh() {
         return high;
