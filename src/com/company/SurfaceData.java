@@ -1,6 +1,6 @@
 package com.company;
 
-public class Surface {
+public class SurfaceData {
     private double thickness;
     private String material;
 

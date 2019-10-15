@@ -10,7 +10,7 @@ public class RoadData {
     //  public boolean isStreetViewable;
 
     private SizeData size;
-    private Surface surface;
+    private SurfaceData surface;
 
     public String getRoadName() {
         return roadName;
@@ -60,11 +60,11 @@ public class RoadData {
         this.size = size;
     }
 
-    public Surface getSurface() {
+    public SurfaceData getSurface() {
         return surface;
     }
 
-    public void setSurface(Surface surface) {
+    public void setSurface(SurfaceData surface) {
         this.surface = surface;
     }
 }
