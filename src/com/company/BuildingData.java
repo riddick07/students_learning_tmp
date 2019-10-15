@@ -17,6 +17,7 @@ public class BuildingData {
     private PriceData cost;
     private boolean isOpen;
 
+
     public String getStyle() {
         return style;
     }
