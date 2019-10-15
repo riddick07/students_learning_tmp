@@ -11,4 +11,60 @@ public class RoadData {
 
     private SizeData size;
     private Surface surface;
+
+    public String getRoadName() {
+        return roadName;
+    }
+
+    public void setRoadName(String roadName) {
+        this.roadName = roadName;
+    }
+
+    public double getSpeedLimit() {
+        return speedLimit;
+    }
+
+    public void setSpeedLimit(double speedLimit) {
+        this.speedLimit = speedLimit;
+    }
+
+    public int getMinimumSpeed() {
+        return minimumSpeed;
+    }
+
+    public void setMinimumSpeed(int minimumSpeed) {
+        this.minimumSpeed = minimumSpeed;
+    }
+
+    public int getLanes() {
+        return lanes;
+    }
+
+    public void setLanes(int lanes) {
+        this.lanes = lanes;
+    }
+
+    public boolean isOpened() {
+        return isOpened;
+    }
+
+    public void setOpened(boolean opened) {
+        isOpened = opened;
+    }
+
+    public SizeData getSize() {
+        return size;
+    }
+
+    public void setSize(SizeData size) {
+        this.size = size;
+    }
+
+    public Surface getSurface() {
+        return surface;
+    }
+
+    public void setSurface(Surface surface) {
+        this.surface = surface;
+    }
 }
