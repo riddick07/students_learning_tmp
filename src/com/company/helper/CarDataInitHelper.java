@@ -8,7 +8,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CarDataInitHelper {
-    public static void init() {
+
+    public static CarData init() {
         CarData carData = new CarData();
         carData.setDriver(getDriverData());
         carData.setInsurance(getInsuranceData());
@@ -21,6 +22,8 @@ public class CarDataInitHelper {
         carData.setDoors(5);
         carData.setWheels(4);
         carData.setHorsepower(65);
+
+        return carData;
     }
 
     private static InsuranceData getInsuranceData() {

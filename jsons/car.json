@@ -1,0 +1,33 @@
+{
+  "brand": "Skoda",
+  "model": "Fabia",
+  "colour": "Red",
+  "licencePlate": "KYFRM148",
+  "licenceCountry": "Germany",
+  "driver": {
+    "felonyCharges": 0,
+    "firstName": "Alexander",
+    "lastName": "Beutler",
+    "birthday": "08.07.2001",
+    "age": 18,
+    "nationality": "German",
+    "isAlive": true,
+    "job": "Student",
+    "children": 0,
+    "isMarried": false,
+    "high": 1.76,
+    "address": "Augartenstraße 112-223, Mannheim"
+  },
+  "insurance": {
+    "hasInsurance": true,
+    "company": "Allianz",
+    "expiry": "16.8.2022",
+    "contact": "V. Beutler",
+    "region": "Erfurt",
+    "clazz": 3,
+    "contribution": 34.6
+  },
+  "doors": 5,
+  "wheels": 4,
+  "horsepower": 65
+}

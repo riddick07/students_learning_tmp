@@ -9,17 +9,20 @@ import java.util.List;
 
 public class WoodDataInitHelper {
 
-    public static void init(){
+    public static ForestData init(){
         ForestData forestData = new ForestData();
         forestData.setLocation(getLocationData());
         forestData.setTrees(getTreesData());
+        return forestData;
     }
 
     private static List<TreeData> getTreesData() {
         List<TreeData> trees = new ArrayList<>();
 
         TreeData treeData = getTreeData();
+        TreeData treeDataTest = getTreeDataTest();
         trees.add(treeData);
+        trees.add(treeDataTest);
 
         return trees;
     }
@@ -32,6 +35,16 @@ public class WoodDataInitHelper {
         treeData.setProduce("apple");
         treeData.setOrigin("germany");
         treeData.setType("apple tree");
+        return treeData;
+    }
+
+    private static TreeData getTreeDataTest() {
+        TreeData treeData = new TreeData();
+        treeData.setAgeInDays(3232);
+        treeData.setColor("green");
+        treeData.setHeight(21);
+        treeData.setOrigin("germany");
+        treeData.setType("cherry tree");
         return treeData;
     }
 

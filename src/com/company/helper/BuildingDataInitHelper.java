@@ -5,7 +5,7 @@ import com.company.data.PriceData;
 
 public class BuildingDataInitHelper {
 
-    public static void init(){
+    public static BuildingData init(){
 
         BuildingData buildingData = new BuildingData();
         buildingData.setCity("Frankfurt");
@@ -27,6 +27,8 @@ public class BuildingDataInitHelper {
         priceData.setIntroduction(123);
 
         buildingData.setCost(priceData);
+
+        return buildingData;
     }
 
 }

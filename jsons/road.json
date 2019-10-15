@@ -1,0 +1,16 @@
+{
+  "roadName": "Hauptstrasse",
+  "speedLimit": 150.0,
+  "minimumSpeed": 61,
+  "lanes": 6,
+  "isOpened": true,
+  "size": {
+    "height": 0.0,
+    "width": 36.0,
+    "length": 200000.0
+  },
+  "surface": {
+    "thickness": 20.0,
+    "material": "tarmac"
+  }
+}

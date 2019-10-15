@@ -6,7 +6,7 @@ import com.company.data.SurfaceData;
 
 public class RoadDataInitHelper {
 
-    public static void init() {
+    public static RoadData init() {
         RoadData roadData = new RoadData();
         roadData.setLanes(6);
         roadData.setMinimumSpeed(61);
@@ -14,11 +14,13 @@ public class RoadDataInitHelper {
         roadData.setRoadName("Hauptstrasse");
         roadData.setSpeedLimit(150);
 
-      SurfaceData surfaceData = getSurfaceData();
-      SizeData sizeData = getSizeData();
+        SurfaceData surfaceData = getSurfaceData();
+        SizeData sizeData = getSizeData();
 
         roadData.setSurface(surfaceData);
         roadData.setSize(sizeData);
+
+        return roadData;
     }
 
     public static SizeData getSizeData() {

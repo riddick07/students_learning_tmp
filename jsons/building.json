@@ -1,0 +1,23 @@
+{
+  "type": "Skyscraper",
+  "city": "Frankfurt",
+  "country": "Germany",
+  "use": "Post Office",
+  "floors": 150,
+  "windows": 1750,
+  "completionYear": 1980,
+  "constructionDuration": 14,
+  "sizeData": {
+    "height": 0.0,
+    "width": 36.0,
+    "length": 200000.0
+  },
+  "cost": {
+    "currency": "US Dollar",
+    "currencyNumber": 1,
+    "amount": 9.8E8,
+    "introduction": 123,
+    "code": "USD"
+  },
+  "isOpen": true
+}
