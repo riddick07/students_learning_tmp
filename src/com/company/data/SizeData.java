@@ -1,4 +1,4 @@
-package com.company;
+package com.company.data;
 
 public class SizeData {
     private double height;
