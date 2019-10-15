@@ -14,14 +14,14 @@ public class ForestData {
         this.trees = trees;
     }
 
-    public Locations getLocation() {
+    public LocationsData getLocation() {
         return location;
     }
 
-    public void setLocation(Locations location) {
+    public void setLocation(LocationsData location) {
         this.location = location;
     }
 
-    private Locations location;
+    private LocationsData location;
 
 }
