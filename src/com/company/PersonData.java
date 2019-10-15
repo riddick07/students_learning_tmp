@@ -2,14 +2,41 @@ package com.company;
 
 public class PersonData {
 
-    private String firstName;
-    private String lastName;
-    private int age;
-    private String nationality;
-    private boolean isAlive;
-    private String job;
-    private int children;
-    private boolean isMarried;
+    public String firstName;
+    public String lastName;
+    public int age;
+    public String nationality;
+    public boolean isAlive;
+    public String job;
+    public int children;
+    public boolean isMarried;
+    private String name;
+    private double high;
+    private String address;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public double getHigh() {
+        return high;
+    }
+
+    public void setHigh(double high) {
+        this.high = high;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
 
     public String getFirstName() {
         return firstName;
