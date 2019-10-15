@@ -21,7 +21,7 @@ public class RoadDataInitHelper {
         roadData.setSize(sizeData);
     }
 
-    private static SizeData getSizeData() {
+    public static SizeData getSizeData() {
         SizeData sizeData = new SizeData();
         sizeData.setHeight(0);
         sizeData.setLength(200000);

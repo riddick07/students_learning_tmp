@@ -13,10 +13,17 @@ public class BuildingData {
     private int windows;
     private int completionYear;
     private int constructionDuration;
-    private int height;
+    private SizeData sizeData;
     private PriceData cost;
     private boolean isOpen;
 
+    public SizeData getSizeData() {
+        return sizeData;
+    }
+
+    public void setSizeData(SizeData sizeData) {
+        this.sizeData = sizeData;
+    }
 
     public String getStyle() {
         return style;
@@ -104,14 +111,6 @@ public class BuildingData {
 
     public void setConstructionDuration(int constructionDuration) {
         this.constructionDuration = constructionDuration;
-    }
-
-    public int getHeight() {
-        return height;
-    }
-
-    public void setHeight(int height) {
-        this.height = height;
     }
 
     public PriceData getCost() {
