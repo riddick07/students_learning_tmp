@@ -33,8 +33,8 @@ public class Main {
         System.out.println("Road: " + rJson);
         System.out.println("Forest: " + fJson);
 
-
-
-
+        Date date = new Date();
+        String s = date.toString();
+        System.out.println(s);
     }
 }
