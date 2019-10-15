@@ -1,14 +1,14 @@
 package com.company;
 
 public class RoadData {
-    public String roadName;
-    public double speedLimit;
-    public int minimumSpeed;
-    public int lanes;
+    private String roadName;
+    private double speedLimit;
+    private int minimumSpeed;
+    private int lanes;
 
-    public boolean isOpened;
+    private boolean isOpened;
     //  public boolean isStreetViewable;
 
-    public SizeData size;
-    public Surface surface;
+    private SizeData size;
+    private Surface surface;
 }
