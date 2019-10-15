@@ -1,4 +1,4 @@
-package com.company.SocketServers;
+package com.company.sockets;
 
 // Server.java
 

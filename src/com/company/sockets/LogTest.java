@@ -1,4 +1,4 @@
-package com.company.SocketServers;
+package com.company.sockets;
 
 import java.io.*;
 import java.util.logging.*;
