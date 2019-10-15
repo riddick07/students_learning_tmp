@@ -12,5 +12,4 @@ public class CarData {
     int wheels;
     int horsepower;
 
-
 }
