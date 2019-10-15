@@ -4,7 +4,24 @@ import java.util.List;
 
 public class ForestData {
 
-    List<TreeDto> trees;
-    Locations location;
+    private List<TreeData> trees;
+
+    public List<TreeData> getTrees() {
+        return trees;
+    }
+
+    public void setTrees(List<TreeData> trees) {
+        this.trees = trees;
+    }
+
+    public Locations getLocation() {
+        return location;
+    }
+
+    public void setLocation(Locations location) {
+        this.location = location;
+    }
+
+    private Locations location;
 
 }
