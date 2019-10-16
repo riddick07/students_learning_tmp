@@ -34,6 +34,12 @@ public class Main {
 //        System.out.println("Forest: " + fJson);
 
 
+        for (CarData carDatum : carData) {
+            if (carDatum.getDriver().getAge() > 25) {
+                System.out.println("Insurance Contributions: " + carDatum.getInsurance().getContribution() + "€");
+                System.out.println("Insurance Class: " + carDatum.getInsurance().getClazz());
+            }
 
+        }
     }
 }

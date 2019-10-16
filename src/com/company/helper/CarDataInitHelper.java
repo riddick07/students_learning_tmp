@@ -28,7 +28,6 @@ public class CarDataInitHelper {
         list.add(carData1);
 
 
-
         CarData carData2 = new CarData();
         carData2.setDriver(getDriverData2());
         carData2.setInsurance(getInsuranceData2());
@@ -67,12 +66,12 @@ public class CarDataInitHelper {
 
         carData4.setBrand("VW");
         carData4.setModel("KnowCars");
-        carData4.setColour("Red");
-        carData4.setLicencePlate("KYFRM148");
+        carData4.setColour("Blue");
+        carData4.setLicencePlate("KYFAM912");
         carData4.setLicenceCountry("Germany");
         carData4.setDoors(5);
         carData4.setWheels(4);
-        carData4.setHorsepower(65);
+        carData4.setHorsepower(85);
 
         list.add(carData4);
 
@@ -100,8 +99,8 @@ public class CarDataInitHelper {
         insuranceData2.setExpiry("16.8.2022");
         insuranceData2.setContact("V. Beutler");
         insuranceData2.setRegion("Erfurt");
-        insuranceData2.setClazz(3);
-        insuranceData2.setContribution(34.60);
+        insuranceData2.setClazz(2);
+        insuranceData2.setContribution(24.50);
         return insuranceData2;
     }
 
@@ -114,8 +113,8 @@ public class CarDataInitHelper {
         insuranceData3.setExpiry("16.8.2022");
         insuranceData3.setContact("V. Beutler");
         insuranceData3.setRegion("Erfurt");
-        insuranceData3.setClazz(3);
-        insuranceData3.setContribution(34.60);
+        insuranceData3.setClazz(1);
+        insuranceData3.setContribution(13.60);
         return insuranceData3;
     }
 
@@ -127,8 +126,8 @@ public class CarDataInitHelper {
         insuranceData4.setExpiry("16.8.2022");
         insuranceData4.setContact("V. Beutler");
         insuranceData4.setRegion("Erfurt");
-        insuranceData4.setClazz(3);
-        insuranceData4.setContribution(34.60);
+        insuranceData4.setClazz(1);
+        insuranceData4.setContribution(16.70);
         return insuranceData4;
     }
 
@@ -158,18 +157,18 @@ public class CarDataInitHelper {
         DriverData driverData2 = new DriverData();
 
         driverData2.setFelonyCharges(0);
-        driverData2.setFirstName("Alexander");
+        driverData2.setFirstName("Sarah");
         driverData2.setLastName("Beutler");
 
-        driverData2.setBirthday("08.07.2001");
-        driverData2.setAge(18);
+        driverData2.setBirthday("28.08.1988");
+        driverData2.setAge(31);
         driverData2.setNationality("German");
         driverData2.setAlive(true);
         driverData2.setJob("Student");
         driverData2.setChildren(0);
         driverData2.setMarried(false);
-        driverData2.setHigh(1.76);
-        driverData2.setAddress("Augartenstraße 112-223, Mannheim");
+        driverData2.setHigh(1.64);
+        driverData2.setAddress("Dresden");
         return driverData2;
     }
 
@@ -178,18 +177,18 @@ public class CarDataInitHelper {
 
 
         driverData3.setFelonyCharges(0);
-        driverData3.setFirstName("Alexander");
+        driverData3.setFirstName("Volker");
         driverData3.setLastName("Beutler");
 
-        driverData3.setBirthday("08.07.2001");
-        driverData3.setAge(18);
+        driverData3.setBirthday("03.01");
+        driverData3.setAge(56);
         driverData3.setNationality("German");
         driverData3.setAlive(true);
-        driverData3.setJob("Student");
-        driverData3.setChildren(0);
-        driverData3.setMarried(false);
-        driverData3.setHigh(1.76);
-        driverData3.setAddress("Augartenstraße 112-223, Mannheim");
+        driverData3.setJob("Insurant");
+        driverData3.setChildren(2);
+        driverData3.setMarried(true);
+        driverData3.setHigh(1.75);
+        driverData3.setAddress("Mühlstraße 4, Heldrungen");
         return driverData3;
     }
 
@@ -199,18 +198,18 @@ public class CarDataInitHelper {
 
 
         driverData4.setFelonyCharges(0);
-        driverData4.setFirstName("Alexander");
+        driverData4.setFirstName("Angela");
         driverData4.setLastName("Beutler");
 
         driverData4.setBirthday("08.07.2001");
-        driverData4.setAge(18);
+        driverData4.setAge(53);
         driverData4.setNationality("German");
         driverData4.setAlive(true);
-        driverData4.setJob("Student");
-        driverData4.setChildren(0);
+        driverData4.setJob("Retired");
+        driverData4.setChildren(2);
         driverData4.setMarried(false);
-        driverData4.setHigh(1.76);
-        driverData4.setAddress("Augartenstraße 112-223, Mannheim");
+        driverData4.setHigh(1.65);
+        driverData4.setAddress("Mühlstraße 4, Heldrungen");
 
         return driverData4;
     }
