@@ -1,70 +1,33 @@
 package com.company;
 
-import com.company.data.*;
-import com.company.helper.BuildingDataInitHelper;
-import com.company.helper.CarDataInitHelper;
-import com.company.helper.RoadDataInitHelper;
-import com.company.helper.WoodDataInitHelper;
-import com.google.gson.Gson;
+import com.company.data.BuildingData;
+import com.company.data.CarData;
+import com.company.data.ForestData;
+import com.company.data.RoadData;
+import com.company.helper.*;
 
 import java.util.List;
 
 public class Main {
 
-    public static void main(String[] args) {
+    static PrintingHelper printingHelper;
 
-        Gson gson = new Gson();
+    public static void main(String[] args) {
 
         List<BuildingData> buildingData = BuildingDataInitHelper.init();
         List<CarData> carData = CarDataInitHelper.init();
         List<RoadData> roadData = RoadDataInitHelper.init();
         List<ForestData> forestData = WoodDataInitHelper.init();
 
-//        String bJson = gson.toJson(buildingData);
-//        String cJson = gson.toJson(carData);
-//        String rJson = gson.toJson(roadData);
-//        String fJson = gson.toJson(forestData);
-//
-//        System.out.println("Building: " + bJson);
-//        System.out.println("Car: " + cJson);
-//        System.out.println("Road: " + rJson);
-//        System.out.println("Forest: " + fJson);
-
-        for (RoadData roadDatum : roadData) {
-            if (roadDatum.getSize().getWidth() > 20) {
-                System.out.println("Roadname: " + roadDatum.getRoadName() + "\n" + "Speedlimit :" + roadDatum.getSpeedLimit());
-            }
+        if (printingHelper == null) {
+            printingHelper = new PrintingHelper();
         }
 
-
-        for (ForestData forestland : forestData) {
-
-            List<TreeData> trees = forestland.getTrees();
-
-            for (TreeData three : trees) {
-                if (three.ageInDays > 2000) {
-                    System.out.println("In the " + forestland.getLocation().getName() + " is a tree of the type: "
-                                        + three.type + ", which is older than 2000 days.");
-                }
-            }
-
-        }
-
-
-        for (CarData carDatum : carData) {
-            if (carDatum.getDriver().getAge() > 25) {
-                System.out.println("Insurance Contributions: " + carDatum.getInsurance().getContribution() + "€");
-                System.out.println("Insurance Class" + carDatum.getInsurance().getClazz());
-            }
-
-
-        }
-
-        for (BuildingData buildingDatum : buildingData) {
-            if (buildingDatum.getSizeData().getHeight() > 25) {
-                System.out.println(buildingDatum.getArchitect().getFirstName() + " "
-                        + buildingDatum.getArchitect().getLastName() + " designed a building higher than 25m.");
-            }
-        }
+        printingHelper.printRoadData(roadData);
+        printingHelper.printForestData(forestData);
+        printingHelper.printCarData(carData);
+        printingHelper.printBuildingData(buildingData);
     }
+
+
 }
