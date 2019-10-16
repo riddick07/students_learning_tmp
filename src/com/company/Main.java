@@ -13,40 +13,25 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Gson gson = new Gson();
-
         List<BuildingData> buildingData = BuildingDataInitHelper.init();
         List<CarData> carData = CarDataInitHelper.init();
         List<RoadData> roadData = RoadDataInitHelper.init();
         List<ForestData> forestData = WoodDataInitHelper.init();
 
-//        String bJson = gson.toJson(buildingData);
-//        String cJson = gson.toJson(carData);
-//        String rJson = gson.toJson(roadData);
-//        String fJson = gson.toJson(forestData);
-//
-//        System.out.println("Building: " + bJson);
-//        System.out.println("Car: " + cJson);
-//        System.out.println("Road: " + rJson);
-//        System.out.println("Forest: " + fJson);
 
         for (RoadData roadDatum : roadData) {
             if (roadDatum.getSize().getWidth() > 20) {
                 System.out.println("Roadname: " + roadDatum.getRoadName() + "\n" + "Speedlimit :" + roadDatum.getSpeedLimit());
             }
         }
-        // print the location name of old trees
 
         for (ForestData forestland : forestData) {
-
             List<TreeData> trees = forestland.getTrees();
-
             for (TreeData three : trees) {
                 if (three.ageInDays > 2000) {
                     System.out.println("In the " + forestland.getLocation().getName() + " is a tree of the type: " + three.type + ", which is older than 2000 days.");
                 }
             }
-
         }
 
 
@@ -55,14 +40,13 @@ public class Main {
                 System.out.println("Insurance Contributions: " + carDatum.getInsurance().getContribution() + "€");
                 System.out.println("Insurance Class" + carDatum.getInsurance().getClazz());
             }
-
-
-    }
-
-      for (BuildingData buildingDatum : buildingData) {
-        if (buildingDatum.getSizeData().getHeight() > 25) {
-            System.out.println(buildingDatum.getArchitect().getFirstName() + " "
-                    + buildingDatum.getArchitect().getLastName() + " designed a building higher than 25m.");
         }
-}
+
+        for (BuildingData buildingDatum : buildingData) {
+            if (buildingDatum.getSizeData().getHeight() > 25) {
+                System.out.println(buildingDatum.getArchitect().getFirstName() + " "
+                        + buildingDatum.getArchitect().getLastName() + " designed a building higher than 25m.");
+            }
+        }
+    }
 }
