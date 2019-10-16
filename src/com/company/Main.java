@@ -1,9 +1,6 @@
 package com.company;
 
-import com.company.data.BuildingData;
-import com.company.data.CarData;
-import com.company.data.ForestData;
-import com.company.data.RoadData;
+import com.company.data.*;
 import com.company.helper.BuildingDataInitHelper;
 import com.company.helper.CarDataInitHelper;
 import com.company.helper.RoadDataInitHelper;
@@ -33,6 +30,7 @@ public class Main {
 //        System.out.println("Road: " + rJson);
 //        System.out.println("Forest: " + fJson);
 
+        // print the location name of old trees
 
         for (BuildingData buildingDatum : buildingData) {
             if(buildingDatum.getSizeData().getHeight()>25){
@@ -41,9 +39,19 @@ public class Main {
             }
         }
 
+        for (ForestData forestland : forestData) {
 
+            List<TreeData> trees = forestland.getTrees();
+
+            for (TreeData three : trees) {
+                if (three.ageInDays > 2000) {
+                    System.out.println("In the " + forestland.getLocation().getName() + " is a tree of the type: " + three.type + ", which is older than 2000 days.");
+                }
+            }
+
+        }
 
     }
 
-
+    }
 }
