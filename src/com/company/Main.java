@@ -30,6 +30,13 @@ public class Main {
 //        System.out.println("Road: " + rJson);
 //        System.out.println("Forest: " + fJson);
 
+        for (RoadData roadDatum : roadData) {
+            if (roadDatum.getSize().getWidth() > 20) {
+                System.out.println("Roadname: " + roadDatum.getRoadName() + "\n" + "Speedlimit :" + roadDatum.getSpeedLimit());
+            }
+        }
+        // print the location name of old trees
+
         for (ForestData forestland : forestData) {
 
             List<TreeData> trees = forestland.getTrees();
@@ -42,21 +49,13 @@ public class Main {
 
         }
 
-        for (RoadData roadDatum : roadData) {
-            if (roadDatum.getSize().getWidth() > 20) {
-                System.out.println("Roadname: " + roadDatum.getRoadName() + "\n" + "Speedlimit :" + roadDatum.getSpeedLimit());
+
+        for (CarData carDatum : carData) {
+            if (carDatum.getDriver().getAge() > 25) {
+                System.out.println("Insurance Contributions: " + carDatum.getInsurance().getContribution() + "€");
+                System.out.println("Insurance Class" + carDatum.getInsurance().getClazz());
             }
+
         }
-        // print the location name of old trees
-
-        for (BuildingData buildingDatum : buildingData) {
-            if (buildingDatum.getSizeData().getHeight() > 25) {
-                System.out.println(buildingDatum.getArchitect().getFirstName() + " "
-                        + buildingDatum.getArchitect().getLastName() + " designed a building higher than 25m.");
-            }
-        }
-
-
-
     }
 }
