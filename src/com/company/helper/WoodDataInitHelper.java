@@ -53,7 +53,6 @@ public class WoodDataInitHelper {
         locationsData.setName("Freiburg");
         locationsData.setLatitude(47.9);
         locationsData.setLongitude(7.8);
-
         return locationsData;
     }
 }
