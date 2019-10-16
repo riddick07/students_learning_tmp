@@ -10,26 +10,28 @@ import com.company.helper.RoadDataInitHelper;
 import com.company.helper.WoodDataInitHelper;
 import com.google.gson.Gson;
 
+import java.util.List;
+
 public class Main {
 
     public static void main(String[] args) {
 
         Gson gson = new Gson();
 
-        BuildingData buildingData = BuildingDataInitHelper.init();
-        CarData carData = CarDataInitHelper.init();
-        RoadData roadData = RoadDataInitHelper.init();
-        ForestData forestData = WoodDataInitHelper.init();
+        List<BuildingData> buildingData = BuildingDataInitHelper.init();
+        List<CarData> carData = CarDataInitHelper.init();
+        List<RoadData> roadData = RoadDataInitHelper.init();
+        List<ForestData> forestData = WoodDataInitHelper.init();
 
-        String bJson = gson.toJson(buildingData);
-        String cJson = gson.toJson(carData);
-        String rJson = gson.toJson(roadData);
-        String fJson = gson.toJson(forestData);
-
-        System.out.println("Building: " + bJson);
-        System.out.println("Car: " + cJson);
-        System.out.println("Road: " + rJson);
-        System.out.println("Forest: " + fJson);
+//        String bJson = gson.toJson(buildingData);
+//        String cJson = gson.toJson(carData);
+//        String rJson = gson.toJson(roadData);
+//        String fJson = gson.toJson(forestData);
+//
+//        System.out.println("Building: " + bJson);
+//        System.out.println("Car: " + cJson);
+//        System.out.println("Road: " + rJson);
+//        System.out.println("Forest: " + fJson);
 
 
 
