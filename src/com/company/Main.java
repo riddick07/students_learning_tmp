@@ -56,6 +56,13 @@ public class Main {
                 System.out.println("Insurance Class" + carDatum.getInsurance().getClazz());
             }
 
-        }
+
     }
+
+      for (BuildingData buildingDatum : buildingData) {
+        if (buildingDatum.getSizeData().getHeight() > 25) {
+            System.out.println(buildingDatum.getArchitect().getFirstName() + " "
+                    + buildingDatum.getArchitect().getLastName() + " designed a building higher than 25m.");
+        }
+}
 }
