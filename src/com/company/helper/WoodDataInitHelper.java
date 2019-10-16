@@ -77,7 +77,7 @@ public class WoodDataInitHelper {
 
         forestData2.setTrees(trees2);
         forestData2.setLocation(locationsData12);
-        forests.add(forestData);
+        forests.add(forestData2);
 
         return forests;
     }
