@@ -1,7 +1,9 @@
 package com.company.helper;
 
 import com.company.data.BuildingData;
+import com.company.data.PersonData;
 import com.company.data.PriceData;
+import com.company.data.SizeData;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,7 +24,7 @@ public class BuildingDataInitHelper {
         buildingData.setCompletionYear(1980);
         buildingData.setConstructionDuration(14);
         buildingData.setOpen(true);
-        buildingData.setSizeData(RoadDataInitHelper.getSizeData());
+        buildingData.setSizeData(getSizeData());
 
         PriceData priceData = new PriceData();
         priceData.setAmount(980000000);
@@ -30,6 +32,11 @@ public class BuildingDataInitHelper {
         priceData.setCode("USD");
         priceData.setCurrencyNumber(1);
         priceData.setIntroduction(123);
+
+        PersonData personData = new PersonData();
+        personData.setFirstName("Generic");
+        personData.setLastName("Architect");
+        buildingData.setArchitect(personData);
 
         buildingData.setCost(priceData);
 
@@ -45,7 +52,7 @@ public class BuildingDataInitHelper {
         buildingData1.setCompletionYear(1985);
         buildingData1.setConstructionDuration(20);
         buildingData1.setOpen(true);
-        buildingData1.setSizeData(RoadDataInitHelper.getSizeData());
+        buildingData1.setSizeData(getSizeData1());
 
         PriceData priceData1 = new PriceData();
         priceData1.setAmount(98000000);
@@ -56,9 +63,31 @@ public class BuildingDataInitHelper {
 
         buildingData.setCost(priceData1);
 
+        PersonData personData1 = new PersonData();
+        personData1.setFirstName("Another");
+        personData1.setLastName("Architect");
+        buildingData1.setArchitect(personData1);
+
+
         list.add(buildingData1);
 
         return list;
     }
 
+    public static SizeData getSizeData() {
+        SizeData sizeData = new SizeData();
+        sizeData.setHeight(20);
+        sizeData.setLength(200000);
+        sizeData.setWidth(36);
+        return sizeData;
+    }
+
+
+    public static SizeData getSizeData1() {
+        SizeData sizeData = new SizeData();
+        sizeData.setHeight(55);
+        sizeData.setLength(200000);
+        sizeData.setWidth(36);
+        return sizeData;
+    }
 }
