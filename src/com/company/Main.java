@@ -31,6 +31,15 @@ public class Main {
         System.out.println("Road: " + rJson);
         System.out.println("Forest: " + fJson);
 
+        for (String arg : args) {
+
+        }
+
+        for (int i = 0; i < args.length; i++) {
+
+            String arg = args[i];
+
+        }
 
 
     }

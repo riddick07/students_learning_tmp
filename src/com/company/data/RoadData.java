@@ -1,16 +1,16 @@
 package com.company.data;
 
 public class RoadData {
-    private String roadName;
-    private double speedLimit;
-    private int minimumSpeed;
-    private int lanes;
+    public String roadName;
+    public double speedLimit;
+    public int minimumSpeed;
+    public int lanes;
 
-    private boolean isOpened;
+    public boolean isOpened;
     //  public boolean isStreetViewable;
 
-    private SizeData size;
-    private SurfaceData surface;
+    public SizeData size;
+    public SurfaceData surface;
 
     public String getRoadName() {
         return roadName;

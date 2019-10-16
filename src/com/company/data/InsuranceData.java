@@ -1,13 +1,13 @@
 package com.company.data;
 
 public class InsuranceData {
-    private boolean hasInsurance;
-    private String company;
-    private String expiry;
-    private String contact;
-    private String region;
-    private int clazz;
-    private double contribution;
+    public boolean hasInsurance;
+    public String company;
+    public String expiry;
+    public String contact;
+    public String region;
+    public int clazz;
+    public double contribution;
 
     public boolean isHasInsurance() {
         return hasInsurance;

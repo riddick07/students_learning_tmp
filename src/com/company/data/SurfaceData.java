@@ -1,8 +1,8 @@
 package com.company.data;
 
 public class SurfaceData {
-    private double thickness;
-    private String material;
+    public double thickness;
+    public String material;
 
     public double getThickness() {
         return thickness;

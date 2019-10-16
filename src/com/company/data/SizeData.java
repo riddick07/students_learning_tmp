@@ -1,9 +1,9 @@
 package com.company.data;
 
 public class SizeData {
-    private double height;
-    private double width;
-    private double length;
+    public double height;
+    public double width;
+    public double length;
 
     public double getHeight() {
         return height;

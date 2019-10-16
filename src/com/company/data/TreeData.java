@@ -1,12 +1,12 @@
 package com.company.data;
 
 public class TreeData {
-    private String type;
-    private String color;
-    private String origin;
-    private String produce;
-    private int ageInDays;
-    private int height;
+    public String type;
+    public String color;
+    public String origin;
+    public String produce;
+    public int ageInDays;
+    public int height;
 
     public String getType() {
         return type;

@@ -31,7 +31,7 @@ public class RoadDataInitHelper {
         return sizeData;
     }
 
-    private static SurfaceData getSurfaceData() {
+    public static SurfaceData getSurfaceData() {
         SurfaceData surfaceData = new SurfaceData();
         surfaceData.setMaterial("tarmac");
         surfaceData.setThickness(20);

@@ -1,7 +1,7 @@
 package com.company.data;
 
 public class DriverData extends PersonData {
-    private int felonyCharges;         //Flensburg
+    public int felonyCharges;         //Flensburg
 
     public int getFelonyCharges() {
         return felonyCharges;

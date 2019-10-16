@@ -2,9 +2,9 @@ package com.company.data;
 
 public class LocationsData {
 
-    private String name;
-    private double longitude;
-    private double latitude;
+    public String name;
+    public double longitude;
+    public double latitude;
 
     public String getName() {
         return name;

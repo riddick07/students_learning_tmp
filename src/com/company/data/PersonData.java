@@ -4,15 +4,15 @@ public class PersonData {
 
     public String firstName;
     public String lastName;
-    private String birthday;
+    public String birthday;
     public int age;
     public String nationality;
     public boolean isAlive;
     public String job;
     public int children;
     public boolean isMarried;
-    private double high;
-    private String address;
+    public double high;
+    public String address;
 
     public String getBirthday() {
         return birthday;

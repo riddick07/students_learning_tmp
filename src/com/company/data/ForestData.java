@@ -4,7 +4,7 @@ import java.util.List;
 
 public class ForestData {
 
-    private List<TreeData> trees;
+    public List<TreeData> trees;
 
     public List<TreeData> getTrees() {
         return trees;
@@ -22,6 +22,6 @@ public class ForestData {
         this.location = location;
     }
 
-    private LocationsData location;
+    public LocationsData location;
 
 }

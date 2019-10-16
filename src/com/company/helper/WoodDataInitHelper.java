@@ -16,7 +16,7 @@ public class WoodDataInitHelper {
         return forestData;
     }
 
-    private static List<TreeData> getTreesData() {
+    public static List<TreeData> getTreesData() {
         List<TreeData> trees = new ArrayList<>();
 
         TreeData treeData = getTreeData();
@@ -27,7 +27,7 @@ public class WoodDataInitHelper {
         return trees;
     }
 
-    private static TreeData getTreeData() {
+    public static TreeData getTreeData() {
         TreeData treeData = new TreeData();
         treeData.setAgeInDays(1250);
         treeData.setColor("green");
@@ -38,7 +38,7 @@ public class WoodDataInitHelper {
         return treeData;
     }
 
-    private static TreeData getTreeDataTest() {
+    public static TreeData getTreeDataTest() {
         TreeData treeData = new TreeData();
         treeData.setAgeInDays(3232);
         treeData.setColor("green");
@@ -48,7 +48,7 @@ public class WoodDataInitHelper {
         return treeData;
     }
 
-    private static LocationsData getLocationData() {
+    public static LocationsData getLocationData() {
         LocationsData locationsData = new LocationsData();
         locationsData.setName("Freiburg");
         locationsData.setLatitude(47.9);

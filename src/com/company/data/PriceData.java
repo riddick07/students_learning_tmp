@@ -2,11 +2,11 @@ package com.company.data;
 
 public class PriceData {
 
-    private String currency;
-    private int currencyNumber;
-    private double amount;
-    private int introduction;
-    private String code;
+    public String currency;
+    public int currencyNumber;
+    public double amount;
+    public int introduction;
+    public String code;
 
     public String getCurrency() {
         return currency;

@@ -1,16 +1,16 @@
 package com.company.data;
 
 public class CarData {
-    private String brand;
-    private String model;
-    private String colour;
-    private String licencePlate;
-    private String licenceCountry;
-    private DriverData driver;
-    private InsuranceData insurance;
-    private int doors;
-    private int wheels;
-    private int horsepower;
+    public String brand;
+    public String model;
+    public String colour;
+    public String licencePlate;
+    public String licenceCountry;
+    public DriverData driver;
+    public InsuranceData insurance;
+    public int doors;
+    public int wheels;
+    public int horsepower;
 
     public String getBrand() {
         return brand;

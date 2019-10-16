@@ -26,7 +26,7 @@ public class CarDataInitHelper {
         return carData;
     }
 
-    private static InsuranceData getInsuranceData() {
+    public static InsuranceData getInsuranceData() {
         InsuranceData insuranceData = new InsuranceData();
 
         insuranceData.setCompany("Allianz");
@@ -41,7 +41,7 @@ public class CarDataInitHelper {
 
     }
 
-    private static DriverData getDriverData() {
+    public static DriverData getDriverData() {
         DriverData driverData = new DriverData();
 
 

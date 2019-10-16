@@ -2,20 +2,20 @@ package com.company.data;
 
 public class BuildingData {
 
-    private String style;
-    private String type;
-    private String color;
-    private PersonData architect;
-    private String city;
-    private String country;
-    private String use;
-    private int floors;
-    private int windows;
-    private int completionYear;
-    private int constructionDuration;
-    private SizeData sizeData;
-    private PriceData cost;
-    private boolean isOpen;
+    public String style;
+    public String type;
+    public String color;
+    public PersonData architect;
+    public String city;
+    public String country;
+    public String use;
+    public int floors;
+    public int windows;
+    public int completionYear;
+    public int constructionDuration;
+    public SizeData sizeData;
+    public PriceData cost;
+    public boolean isOpen;
 
     public SizeData getSizeData() {
         return sizeData;
