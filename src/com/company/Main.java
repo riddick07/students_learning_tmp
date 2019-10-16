@@ -30,6 +30,11 @@ public class Main {
 //        System.out.println("Road: " + rJson);
 //        System.out.println("Forest: " + fJson);
 
+        for (RoadData roadDatum :roadData){
+        if(roadDatum.getSize().getWidth() > 20){
+                System.out.println("Roadname: " + roadDatum.getRoadName() + "\n" + "Speedlimit :" + roadDatum.getSpeedLimit());
+            }
+        }
         // print the location name of old trees
 
         for (BuildingData buildingDatum : buildingData) {
