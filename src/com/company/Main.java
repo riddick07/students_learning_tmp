@@ -23,16 +23,12 @@ public class Main {
         List<RoadData> roadData = RoadDataInitHelper.init();
         List<ForestData> forestData = WoodDataInitHelper.init();
 
-//        String bJson = gson.toJson(buildingData);
-//        String cJson = gson.toJson(carData);
-//        String rJson = gson.toJson(roadData);
-//        String fJson = gson.toJson(forestData);
-//
-//        System.out.println("Building: " + bJson);
-//        System.out.println("Car: " + cJson);
-//        System.out.println("Road: " + rJson);
-//        System.out.println("Forest: " + fJson);
 
+        for (RoadData roadDatum :roadData){
+        if(roadDatum.getSize().getWidth() > 20){
+                System.out.println("Roadname: " + roadDatum.getRoadName() + "\n" + "Speedlimit :" + roadDatum.getSpeedLimit());
+            }
+        }
 
 
     }

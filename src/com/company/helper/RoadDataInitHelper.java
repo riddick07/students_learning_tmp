@@ -36,8 +36,8 @@ public class RoadDataInitHelper {
         roadData1.setRoadName("Turmgasse");
         roadData1.setSpeedLimit(30);
 
-        SurfaceData surfaceData1 = getSurfaceData();
-        SizeData sizeData1 = getSizeData();
+        SurfaceData surfaceData1 = getSurfaceData1();
+        SizeData sizeData1 = getSizeData1();
 
         roadData1.setSurface(surfaceData1);
         roadData1.setSize(sizeData1);
@@ -59,5 +59,19 @@ public class RoadDataInitHelper {
         surfaceData.setMaterial("tarmac");
         surfaceData.setThickness(20);
         return surfaceData;
+    }
+    public static SizeData getSizeData1() {
+        SizeData sizeData1 = new SizeData();
+        sizeData1.setHeight(0);
+        sizeData1.setLength(3000);
+        sizeData1.setWidth(10);
+        return sizeData1;
+    }
+
+    public static SurfaceData getSurfaceData1() {
+        SurfaceData surfaceData1 = new SurfaceData();
+        surfaceData1.setMaterial("tarmac");
+        surfaceData1.setThickness(20);
+        return surfaceData1;
     }
 }
