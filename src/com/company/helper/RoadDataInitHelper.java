@@ -1,12 +1,19 @@
 package com.company.helper;
 
+import com.company.data.BuildingData;
 import com.company.data.RoadData;
 import com.company.data.SizeData;
 import com.company.data.SurfaceData;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class RoadDataInitHelper {
 
-    public static RoadData init() {
+    public static List<RoadData> init() {
+        List<RoadData> list = new ArrayList<>();
+
+
         RoadData roadData = new RoadData();
         roadData.setLanes(6);
         roadData.setMinimumSpeed(61);
@@ -20,7 +27,23 @@ public class RoadDataInitHelper {
         roadData.setSurface(surfaceData);
         roadData.setSize(sizeData);
 
-        return roadData;
+        list.add(roadData);
+
+        RoadData roadData1 = new RoadData();
+        roadData1.setLanes(2);
+        roadData1.setMinimumSpeed(0);
+        roadData1.setOpened(true);
+        roadData1.setRoadName("Turmgasse");
+        roadData1.setSpeedLimit(30);
+
+        SurfaceData surfaceData1 = getSurfaceData();
+        SizeData sizeData1 = getSizeData();
+
+        roadData1.setSurface(surfaceData1);
+        roadData1.setSize(sizeData1);
+
+        list.add(roadData1);
+        return list;
     }
 
     public static SizeData getSizeData() {
