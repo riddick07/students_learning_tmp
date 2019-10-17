@@ -1,14 +1,12 @@
 package com.company.helper;
 
-import com.company.data.BuildingData;
-import com.company.data.PersonData;
-import com.company.data.PriceData;
-import com.company.data.SizeData;
+import com.company.data.*;
+import com.company.tasks.ILocations;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class BuildingDataInitHelper {
+public class BuildingDataInitHelper implements ILocations {
 
     public static List<BuildingData> init(){
 
@@ -89,5 +87,20 @@ public class BuildingDataInitHelper {
         sizeData.setLength(200000);
         sizeData.setWidth(36);
         return sizeData;
+    }
+
+    @Override
+    public LocationsData getClosestLocation(List<LocationsData> locations) {
+        LocationsData locationsData = new LocationsData();
+        System.out.println();
+        for (LocationsData location : locations) {
+            double lat = location.getLatitude();
+            double lon = location.getLongitude();
+            if (lat > 45 && lon > 6) {
+                return location;
+            }
+        }
+
+        return null;
     }
 }
