@@ -8,6 +8,7 @@ public class TreeData {
     public int ageInDays;
     public int height;
 
+
     public String getType() {
         return type;
     }

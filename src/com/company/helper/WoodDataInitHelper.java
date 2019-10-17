@@ -3,11 +3,15 @@ package com.company.helper;
 import com.company.data.ForestData;
 import com.company.data.LocationsData;
 import com.company.data.TreeData;
+import com.company.tasks.ITree;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
-public class WoodDataInitHelper {
+public class WoodDataInitHelper implements ITree {
 
     public static List<ForestData> init() {
         List<ForestData> forests = new ArrayList<>();
@@ -33,16 +37,14 @@ public class WoodDataInitHelper {
         trees.add(treeData1);
         trees.add(treeData2);
 
-
         LocationsData locationsData1 = new LocationsData();
         locationsData1.setName("USA");
         locationsData1.setLatitude(777.9);
         locationsData1.setLongitude(44.8);
 
         forestData.setTrees(trees);
-        forestData.setLocation(locationsData1);
-        forests.add(forestData);
 
+        forests.add(forestData);
 
         //---------------------------------------
 
@@ -69,16 +71,40 @@ public class WoodDataInitHelper {
         trees2.add(treeData22);
         trees2.add(treeData12);
 
-
         LocationsData locationsData12 = new LocationsData();
         locationsData12.setName("Kronberg");
         locationsData12.setLatitude(50);
         locationsData12.setLongitude(60);
 
         forestData2.setTrees(trees2);
-        forestData2.setLocation(locationsData12);
+
         forests.add(forestData2);
 
         return forests;
+    }
+
+    public static List<TreeData> inittree(){
+        List<TreeData> trees = new ArrayList<>();
+        TreeData treeData1 = new TreeData();
+        treeData1.setAgeInDays(125330);
+        treeData1.setColor("blue");
+        treeData1.setHeight(333);
+        treeData1.setOrigin("moon");
+        treeData1.setType("sometree");
+        trees.add(treeData1);
+        return trees;
+
+    }
+
+    public List<TreeData> getOldTrees(List<TreeData> treeData) {
+        List<TreeData> listOfOldTrees = new ArrayList<>();
+        for (TreeData treeDatum : treeData) {
+            if (treeDatum.getAgeInDays() > 2000) {
+                listOfOldTrees.add(treeDatum);
+            }
+        }
+
+        System.out.println();
+        return listOfOldTrees;
     }
 }

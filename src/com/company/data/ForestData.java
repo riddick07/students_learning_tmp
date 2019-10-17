@@ -14,14 +14,4 @@ public class ForestData {
         this.trees = trees;
     }
 
-    public LocationsData getLocation() {
-        return location;
-    }
-
-    public void setLocation(LocationsData location) {
-        this.location = location;
-    }
-
-    public LocationsData location;
-
 }
