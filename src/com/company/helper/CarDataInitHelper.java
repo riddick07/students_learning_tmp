@@ -3,18 +3,19 @@ package com.company.helper;
 import com.company.data.CarData;
 import com.company.data.DriverData;
 import com.company.data.InsuranceData;
+import com.company.tasks.IDriver;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class CarDataInitHelper {
+public class CarDataInitHelper implements IDriver {
 
     public static List<CarData> init() {
         List<CarData> list = new ArrayList<>();
 
         CarData carData1 = new CarData();
         carData1.setDriver(getDriverData1());
-        carData1.setInsurance(getInsuranceData1()); //numeration??
+        carData1.setInsurance(getInsuranceData1());
 
         carData1.setBrand("Skoda");
         carData1.setModel("Fabia");
@@ -207,11 +208,26 @@ public class CarDataInitHelper {
         driverData4.setAlive(true);
         driverData4.setJob("Retired");
         driverData4.setChildren(2);
-        driverData4.setMarried(false);
+        driverData4.setMarried(true);
         driverData4.setHigh(1.65);
         driverData4.setAddress("Mühlstraße 4, Heldrungen");
 
         return driverData4;
     }
 
+
+    //v does not run automatically, seperately called function
+    @Override
+    public void getOldestDriver(List<DriverData> drivers) { // (List<Type> name)
+        int oldest;                                         //    list of type with name -> utilized by not initialized
+
+        oldest = getDriverData1().age;
+        for (DriverData driver : drivers) {
+            if (oldest < driver.age) {
+                oldest = driver.age;
+            }
+        }
+        System.out.println(String.valueOf(oldest));
+    }
 }
+
